@@ -73,3 +73,20 @@ You simply plug in:
 The socket is the stable abstraction.
 
 > **Don't keep modifying stable code every time you add a new behavior. Extend it.**
+
+---
+
+### 3. L — Liskov Substitution Principle
+
+> Subtypes must be substitutable for their base types without breaking the
+> program.
+
+If a function accepts a `Bird`, every valid bird should be usable there without
+special cases or unexpected errors. Since penguins cannot fly, `fly()` belongs
+to a narrower `FlyingBird` abstraction instead of the base `Bird` abstraction.
+
+The example in `03-l-liskov-substitution/` shows how `Eagle` and `Penguin` can
+both replace `Bird`, while only `Eagle` is used where flying is required.
+
+> **Keep abstractions honest: a subtype should support the promises made by its
+> base type.**
