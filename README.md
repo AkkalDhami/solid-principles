@@ -90,3 +90,13 @@ both replace `Bird`, while only `Eagle` is used where flying is required.
 
 > **Keep abstractions honest: a subtype should support the promises made by its
 > base type.**
+>
+
+---
+
+### 4. I — Interface Segregation Principle
+
+> Clients should not be forced to depend on interfaces they don't use.
+
+**Prefer several small, focused interfaces over one giant interface.**
+
